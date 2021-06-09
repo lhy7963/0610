@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+
+
+	<style type="text/css">
+		
+		html{background-color: black; color:#8F8F8F; margin: 50px; font-family: 'Noto Sans KR'}
+
+		/*영역*/
+		.pathbox{ height: 300px; display: flex; justify-content: center; text-align: center; margin: auto;}
+		.narration{margin-left: 200px;  font-size: 80px}
+
+		/*정렬*/
+		.center { display: flex;  justify-content: center;}
+		.justcentre{text-align: center}
+		.inline{display: inline;}
+		.absolute{position: absolute;}
+
+		/*마진*/
+		.margintop{margin-top: 200px}
+		.marginbottom{margin-bottom: 200px}
+
+
+		/*텍스트*/
+		.firsttitletext{font-size: 5em; margin-top: 0px; margin-bottom: 0px;}
+		.titletext{font-size: 3em}
+		.text{font-size: 16px}
+		.text2{font-size: 32px}
+		.textaligncenter{text-align: center}
+
+		/*컬러*/
+		.colorgreen{color: #00E4AF}
+		.colorpink{color: #FF0099}
+		.colordarkgray{color: #707070}
+		.colorwhite{color: #ffffff}
+
+		/*이미지*/
+		#opacity{opacity: 0.5}
+		#map5{width: 700px; height: 357px; background: url('map5.png')}
+		#map5:hover{width: 700px; height: 357px; background: url(map6.png);}
+		.back1{width: 1500px; height: 400px;background: url(city2.png);background-size: 100% auto; background-attachment: fixed;}
+
+		/*앱솔루트*/
+		.absolute{display: block;position: absolute;}
+		.sticker1{left:600px; width: 300px; top: 180px; z-index: 33}
+		
+
+	</style>
+</head>
+<body>
+
+	<section>
+		<DIV>
+			<p> Operation Name:</p>
+			<h1 class="colorgreen firsttitletext"> <i> Alpha</i></h1>
+				<div class="pathbox">
+				<div>
+					<p class="colorgreen">Seoul</p>
+					<p class="colorgreen">13:00</p>
+					<img src="pathseoul.png">
+				</div>
+				<div>
+					<p>Rome</p>
+					<p>13:00</p>
+					<img src="pathrome.png">
+				</div>
+				<div>
+					<p >New York</p>
+					<p>13:00</p>
+					<img src="pathnewyork.png">
+				</div>
+				<div>
+					<p >Paris</p>
+					<p>13:00</p>
+					<img src="pathparis.png">
+				</div>
+				<div>
+					<p >Brasilia</p>
+					<p>13:00</p>
+					<img src="pathberlin.png">
+				</div>
+			</div>
+		</DIV>
+	</section>
+
+	<section class="back1 marginbottom">
+		<center>
+			<B><h1 class="colorwhite titletext"> <i>.</i></h1></B>			
+		</center>
+		
+	</section>
+
+	<section>
+		<div class="narration">
+			<div class="marginbottom">도시와 건물의<br>모든 구조는<br> <span class="colorwhite">넌센스 퀴즈</span>와 같다. ­­­</div>
+			<div class="marginbottom">영리한 도둑은<br>문제를<br> <span class="colorwhite">창의적</span>으로 <br> 풀어낸다. ­­­</div>
+			<div class="marginbottom">그들은<br> <span class="colorwhite">정해진 방식</span>에 <br> 얽매이지 않는다.  ­­­</div>
+			<div class="marginbottom colorwhite textaligncenter">그게 문이라고 할지라도.</div>
+		</div>
+	</section>
+
+	<section class="marginbottom">
+		<div>
+			<center>
+				<img src="person.png">
+				<p class="titletext colorgreen">what is alpha?</p>
+				<p class="text2">2021년 5월, 경찰측은 지금까지의 <span class="text2 colorwhite">연쇄절도범 알파</span>의 범행을 분석하여 데이터를 만들었다. <br>
+경찰은 알파가 6월 10일 한 건물에 침입할 것이라고 예측하였다. <br>
+이에 따라 경찰은 데이터를 바탕으로 한 알파의 예상 범행 경로를 만들었다. </p>
+			</center>
+		</div>
+	</section>
+
+<details>
+    <summary>더 많은 내용</summary>
+    <p>내부에 넣을 내용을 입력해주세요</p>
+</details>
+
+
+
+	<section>
+		<h1 class="colorgreen titletext">알파는 그동안 전세계 4곳에서 범행을 저질렀다.</h1>
+		<div>
+			<div class="center">
+				<div id="map5"></div>
+			</div>
+		</div>
+		<p class="text2">  <span class="colorwhite">로마, 뉴욕, 파리, 브라질리아. </span><br> 그는 주로 값비싼 보석을 훔쳤다. <br> 경찰은 그의 다음 범행 장소가 <span class="colorwhite">서울</span>일 것이라고 예측하였다. </p>
+	</section>
+
+	<section class="marginbottom">
+
+		<div class="incline">
+			<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
+<h1 class="colorwhite titletext inline"> Newyork</h1>
+</a><div style="DISPLAY: none">
+<div class="center">
+			<img src="newyork.png">
+			<div>
+				<p class="text2 colorgreen">2020 - 08 -05</p>
+				<p>Blue Diamond</p>
+				<p>사망자 없음<br>사상자 없음<br>2억 달러 상의 재산피해 </p>
+				<p>moving line</p>
+				<p>▶ February 26, 4:38 PM: <br>CU expansion headpoint <br>▶ February 28, 4:02 PM: <br>CU Pyeongtaek Head Branch <br>▶ February 29, 12:39 PM: <br>CU Pyeongtaek Sosa Penalty Store <br>▶February 29, 12:57 PM: <br>Pasgucci Sauce Penalty Store <br>▶February 29th 1:30 PM: <br>Lovely (Sosabal) <br>▶ March 5<br> Pyeongtaek Health Center <br> Screening Clinic</p>
+			</div>
+</div>	
+		</div>
+
+		<div class="incline">
+			<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
+<h1 class="colorwhite titletext inline"> Rome</h1>
+</a><div style="DISPLAY: none">
+<div class="center">
+			<img src="newyork.png">
+			<div>
+				<p class="text2 colorgreen">2020 - 08 -05</p>
+				<p>Blue Diamond</p>
+				<p>사망자 없음<br>사상자 없음<br>2억 달러 상의 재산피해 </p>
+				<p>moving line</p>
+				<p>▶ February 26, 4:38 PM: <br>CU expansion headpoint <br>▶ February 28, 4:02 PM: <br>CU Pyeongtaek Head Branch <br>▶ February 29, 12:39 PM: <br>CU Pyeongtaek Sosa Penalty Store <br>▶February 29, 12:57 PM: <br>Pasgucci Sauce Penalty Store <br>▶February 29th 1:30 PM: <br>Lovely (Sosabal) <br>▶ March 5<br> Pyeongtaek Health Center <br> Screening Clinic</p>
+			</div>
+</div>	
+		</div>
+
+		<div>
+			<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
+<h1 class="colorwhite titletext inline"> Paris</h1>
+</a><div style="DISPLAY: none">
+<div class="center">
+			<img src="newyork.png">
+			<div>
+				<p class="text2 colorgreen">2020 - 08 -05</p>
+				<p>Blue Diamond</p>
+				<p>사망자 없음<br>사상자 없음<br>2억 달러 상의 재산피해 </p>
+				<p>moving line</p>
+				<p>▶ February 26, 4:38 PM: <br>CU expansion headpoint <br>▶ February 28, 4:02 PM: <br>CU Pyeongtaek Head Branch <br>▶ February 29, 12:39 PM: <br>CU Pyeongtaek Sosa Penalty Store <br>▶February 29, 12:57 PM: <br>Pasgucci Sauce Penalty Store <br>▶February 29th 1:30 PM: <br>Lovely (Sosabal) <br>▶ March 5<br> Pyeongtaek Health Center <br> Screening Clinic</p>
+			</div>
+</div>	
+		</div>
+
+<div>
+			<a onclick="this.nextSibling.style.display=(this.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)">
+<h1 class="colorwhite titletext inline"> Brasilia</h1>
+</a><div style="DISPLAY: none">
+<div class="center">
+			<img src="newyork.png">
+			<div>
+				<p class="text2 colorgreen">2020 - 08 -05</p>
+				<p>Blue Diamond</p>
+				<p>사망자 없음<br>사상자 없음<br>2억 달러 상의 재산피해 </p>
+				<p>moving line</p>
+				<p>▶ February 26, 4:38 PM: <br>CU expansion headpoint <br>▶ February 28, 4:02 PM: <br>CU Pyeongtaek Head Branch <br>▶ February 29, 12:39 PM: <br>CU Pyeongtaek Sosa Penalty Store <br>▶February 29, 12:57 PM: <br>Pasgucci Sauce Penalty Store <br>▶February 29th 1:30 PM: <br>Lovely (Sosabal) <br>▶ March 5<br> Pyeongtaek Health Center <br> Screening Clinic</p>
+			</div>
+</div>	
+		</div>
+
+
+	</section>
+
+</section>
+
+
+
+
+
+	<section>
+		<h1 class="colorgreen titletext"> 예상범행경로</h1>
+		<p class="text2">February 29, 12:39 PM: DaVinci Town</p>
+	<div class="absolute">
+		<img src="town.gif">
+		<div class="absolute sticker1 colorwhite">▶ February 26, 4:38 PM: <br>CU expansion headpoint <br>▶ 4:40 PM: <br>CU Pyeongtaek Head Branch <br>▶ 4:45 PM <br>CU Pyeongtaek Sosa Penalty Store<br>▶4:50 PM: <br>Pasgucci Sauce Penalty Store 
+	</div>
+		<h1 class="colorwhite titletext"> DaVinci </h1>
+		<p class="text2">February 29, 12:39 PM: DaVinci Town</p>
+	</section>
+</body>
+</html>
